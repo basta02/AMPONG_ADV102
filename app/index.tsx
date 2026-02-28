@@ -22,7 +22,6 @@ const Home = () => {
   const [inputText, setInputText] = useState('');
   const [modalVisible, setModalVisible] = useState(false);
 
-  
 
   const closeModal = () => {
     setModalVisible(false);
@@ -32,10 +31,10 @@ const Home = () => {
   return (
     <KeyboardAvoidingView behavior="padding" style={{ flex: 1 }}>
       <ScrollView contentContainerStyle={styles.container}>
-        {/* Title */}
+        {}
         <Text style={styles.title}>Home</Text>
 
-        {/* SearchBar at the top with subtle background */}
+        {}
         <View style={styles.searchWrapper}>
           <SearchBar
             value={search}
@@ -44,10 +43,8 @@ const Home = () => {
           />
         </View>
 
-        
-        
-
-        {/* Input Section */}
+      
+        {}
         <Text style={{ marginTop: 20 }}>Enter Something:</Text>
         <TextInput
           style={styles.input}
@@ -56,7 +53,7 @@ const Home = () => {
           placeholder="Type here..."
         />
 
-        {/* Buttons */}
+        {}
         <TouchableOpacity
           style={styles.webButton}
           onPress={() => {
@@ -67,9 +64,8 @@ const Home = () => {
           <Text style={styles.webButtonText}>Go to Orders</Text>
         </TouchableOpacity>
 
-        
           
-        {/* Modal Button */}
+        {}
         <TouchableOpacity
           style={styles.webButton}
           onPress={() => setModalVisible(true)}
@@ -77,7 +73,7 @@ const Home = () => {
           <Text style={styles.webButtonText}>Show Modal</Text>
         </TouchableOpacity>
 
-        {/* Modal */}
+        {}
         <Modal visible={modalVisible} transparent animationType="slide">
           <View style={styles.modalContainer}>
             <View style={styles.modalContent}>
